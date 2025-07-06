@@ -17,6 +17,7 @@ const Hero = () => {
     const {userDetail, setUserDetail} = useContext(UserDetailContext);
     const [openDialog, setOpenDialog] = useState(false);
     const CreateWorkspace = useMutation(api.workspace.CreateWorkspace);
+    
     const router = useRouter();
     const onGenerate = async (input) => {
         if (!userDetail?.name) {
